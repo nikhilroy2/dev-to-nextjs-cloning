@@ -1,0 +1,116 @@
+header#Header {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background: #fff;
+
+    .header_wrapper {
+
+        height: 56px;
+        display: flex;
+        align-items: center;
+
+        .flex_row {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .flex_col {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .logo_link {
+            display: flex;
+        }
+
+        .form_group {
+            position: relative;
+            margin-left: 16px;
+            margin-right: 16px;
+
+            input.form_search {
+                padding: 6.5px 8px;
+                width: 420px;
+                height: 39px;
+                display: inline-block;
+                font-size: 16px;
+                border: 1.5px solid rgba(212, 212, 212);
+                border-radius: 5px;
+                color: rgba(23, 23, 23);
+
+                &:focus {
+                    border-color: rgba(59, 73, 223);
+                    box-shadow: 0 0 0 1px rgba(59, 73, 223);
+                    outline: none;
+                }
+            }
+
+            .form_search_btn {
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .user_menu_list {
+            display: flex;
+            align-items: center;
+            $primary_color: rgba(59, 73, 223);
+
+            &>li:not(:last-child) {
+                margin-right: 8px;
+            }
+
+            .btn_post {
+                border: 1px solid $primary_color;
+                color: $primary_color;
+                font-size: 16px;
+                padding: 7px 15px;
+                border-radius: 5px;
+                font-weight: bold;
+                &:hover {
+                    background: $primary_color;
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
+
+            .btn_notify {
+                background: rgba(229, 229, 229);
+                padding: 8px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: rgba(59, 73, 223, .1);
+
+                    svg {
+                        fill: $primary_color
+                    }
+                }
+            }
+
+            .btn_profile {
+                padding: 4px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    background-color: rgba(59, 73, 223, .1);
+                    border-radius: 100%;
+                }
+
+                img {
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}

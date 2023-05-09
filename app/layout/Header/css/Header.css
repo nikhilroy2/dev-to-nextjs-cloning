@@ -1,0 +1,97 @@
+header#Header {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+header#Header .header_wrapper {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+header#Header .header_wrapper .flex_row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header#Header .header_wrapper .flex_row .flex_col {
+  display: flex;
+  align-items: center;
+}
+header#Header .header_wrapper .logo_link {
+  display: flex;
+}
+header#Header .header_wrapper .form_group {
+  position: relative;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+header#Header .header_wrapper .form_group input.form_search {
+  padding: 6.5px 8px;
+  width: 420px;
+  height: 39px;
+  display: inline-block;
+  font-size: 16px;
+  border: 1.5px solid rgb(212, 212, 212);
+  border-radius: 5px;
+  color: rgb(23, 23, 23);
+}
+header#Header .header_wrapper .form_group input.form_search:focus {
+  border-color: rgb(59, 73, 223);
+  box-shadow: 0 0 0 1px rgb(59, 73, 223);
+  outline: none;
+}
+header#Header .header_wrapper .form_group .form_search_btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header#Header .header_wrapper .user_menu_list {
+  display: flex;
+  align-items: center;
+}
+header#Header .header_wrapper .user_menu_list > li:not(:last-child) {
+  margin-right: 8px;
+}
+header#Header .header_wrapper .user_menu_list .btn_post {
+  border: 1px solid rgb(59, 73, 223);
+  color: rgb(59, 73, 223);
+  font-size: 16px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+header#Header .header_wrapper .user_menu_list .btn_post:hover {
+  background: rgb(59, 73, 223);
+  color: #fff;
+  text-decoration: underline;
+}
+header#Header .header_wrapper .user_menu_list .btn_notify {
+  background: rgb(229, 229, 229);
+  padding: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+header#Header .header_wrapper .user_menu_list .btn_notify:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+}
+header#Header .header_wrapper .user_menu_list .btn_notify:hover svg {
+  fill: rgb(59, 73, 223);
+}
+header#Header .header_wrapper .user_menu_list .btn_profile {
+  padding: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+header#Header .header_wrapper .user_menu_list .btn_profile:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+  border-radius: 100%;
+}
+header#Header .header_wrapper .user_menu_list .btn_profile img {
+  border-radius: 100%;
+}/*# sourceMappingURL=Header.css.map */
